@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="assets/styles.css"/>
+    <script src="assets/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
@@ -16,7 +17,16 @@
                 <div class="contact_info_container fh contact-info__block--center">
                     <div class="contact-info__block">
                         <div class="contact-info__block contact-info__block--center">
-                            <img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar"/>
+                            <a href="#" id="openModalLink">
+                                <img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar"/>
+                            </a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <iframe src="https://giphy.com/embed/dZurQJ6eucsrJUvLx7" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                    <p><a href="https://giphy.com/gifs/suitsusanetwork-usa-network-suits-dZurQJ6eucsrJUvLx7"></a></p>
+                                </div>
+                            </div>
                         </div>
                         <div class="contact-info__block">
                             <a href="" rel="author" class="contact-info__item">
@@ -92,7 +102,7 @@
                                     </div>
                                     <div class="experiences__company-project">
                                         <span class="experiences__company-project-role">Ruby Developer</span>
-                                        <h3 class="experiences__company-project-name">Enegry</h3>
+                                        <h3 class="experiences__company-project-name">Energy</h3>
                                         <ul class="experiences__company-project-responsibilities">
                                             <li>Developing new features</li>
                                             <li>API Integration</li>
@@ -130,6 +140,66 @@
                             <h3 class="additional-info__languages-header">Languages</h3>
                             <p class="additional-info__languages-item">English</p>
                             <p class="additional-info__languages-item">Ukrainian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="main-info fh">
+                        <div class="experiences">
+                            <div class="skillbar-wrapper">
+                                <div class="skillbar clearfix ruby" data-percent="100%">
+                                    <h4 class="skillbar-title"><span>Ruby</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix html5" data-percent="60%">
+                                    <h4 class="skillbar-title"><span>HTML5</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix css" data-percent="60%">
+                                    <h4 class="skillbar-title"><span>CSS</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix javascript" data-percent="60%">
+                                    <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix restfull-api" data-percent="100%">
+                                    <h4 class="skillbar-title"><span>RESTfull API</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix sql" data-percent="80%">
+                                    <h4 class="skillbar-title"><span>SQL</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+
+                                <div class="skillbar clearfix aws" data-percent="60%">
+                                    <h4 class="skillbar-title"><span>AWS</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+                                <div class="skillbar clearfix docker" data-percent="100%">
+                                    <h4 class="skillbar-title"><span>Docker</span></h4>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+
+
+                            </div>
                         </div>
 
                     </div>
