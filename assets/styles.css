@@ -268,3 +268,124 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+/*= Proficiency */
+
+.skillbar-wrapper {
+    margin: 1.5em auto;
+    max-width: 960px;
+}
+
+.skillbar {
+    position:relative;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin: 0;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height:35px;
+    line-height: 35px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0%;
+    border-radius: 3px;
+    transition: 500ms linear;
+    transition-property: width, background-color;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba( 0, 0, 0, 0.4 );
+    transition: color 500ms ease-out;
+}
+
+.complete .skill-bar-percent {
+    color: #fff;
+}
+
+.complete.server .skill-bar-percent {
+    color: #333;
+}
+
+.skillbar-title {
+    background: #FF9A00;
+}
+
+.skillbar-bar {
+    background: #FFE4BA;
+}
+
+
+/*Еaster egg*/
+
+.contact-info__block--center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
